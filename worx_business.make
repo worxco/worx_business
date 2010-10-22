@@ -106,3 +106,6 @@ projects[imce_wysiwyg][version] = "1"
 
 projects[content_access][subdir] = "standard"
 projects[content_access][version] = "1"
+
+projects[css_injector][subdir] = "standard"
+projects[css_injector][version] = "1"
