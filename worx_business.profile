@@ -19,12 +19,12 @@ function worx_business_profile_modules() {
     'ctools', 'page_manager', 'panels', 'context_admin', 'context_admin_vbo', 'views_content',
     // Features tools
     'context', 'strongarm', 'features', 
-		// Standard modules
+    // Standard modules
     'devel', 'drupalforfirebug', 'drupalforfirebug_preprocess', 'htmlpurifier', 'image_resize_filter', 'jquery_update', 'menu_attributes', 'menu_block', 'menu_breadcrumb', 'xmlsitemap', 
-		// Wysiwyg
-		'wysiwyg', 'imce', 'imce_wysiwyg', 
-		// Php format needed so that Footer Mesage block and have php code for the year, site name, and login/logout.
-		'php', 
+    // Wysiwyg
+    'wysiwyg', 'imce', 'imce_wysiwyg', 
+    // Php format needed so that Footer Mesage block and have php code for the year, site name, and login/logout.
+    'php', 
     );
 		
 }
