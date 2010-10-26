@@ -160,6 +160,7 @@ projects[site_verify][version] = "1"
 
 projects[webform][subdir] = "secondary"
 projects[webform][version] = "3"
+
 ;Libraries
 libraries[htmlpurifier_library][download][type] = "git"
 libraries[htmlpurifier_library][destination] = "modules/standard/htmlpurifier"
@@ -170,3 +171,49 @@ libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][destination] = "libraries"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.4.1/ckeditor_3.4.1.zip"
 libraries[ckeditor][directory_name] = "ckeditor"
+
+;Features
+projects[menu_sub_pages][download][type] = "get"
+projects[menu_sub_pages][destination] = "features"
+projects[menu_sub_pages][download][url] = "http://features.worxco.com/sites/default/files/fserver/menu_sub_pages-6.x-1.0-alpha1.tgz"
+projects[menu_sub_pages][directory_name] = "menu_sub_pages"
+
+projects[worx_blog][download][type] = "get"
+projects[worx_blog][destination] = "features"
+projects[worx_blog][download][url] = "http://features.worxco.com/sites/default/files/fserver/worx_blog-6.x-1.0-alpha4.tgz"
+projects[worx_blog][directory_name] = "worx_blog"
+
+projects[worx_catalog][download][type] = "get"
+projects[worx_catalog][destination] = "features"
+projects[worx_catalog][download][url] = "http://features.worxco.com/sites/default/files/fserver/worx_catalog-6.x-1.0-alpha3.tgz"
+projects[worx_catalog][directory_name] = "worx_catalog"
+
+projects[worx_faq][download][type] = "get"
+projects[worx_faq][destination] = "features"
+projects[worx_faq][download][url] = "http://features.worxco.com/sites/default/files/fserver/worx_faq-6.x-1.0-alpha5.tgz"
+projects[worx_faq][directory_name] = "worx_faq"
+
+projects[worx_news][download][type] = "get"
+projects[worx_news][destination] = "features"
+projects[worx_news][download][url] = "http://features.worxco.com/sites/default/files/fserver/worx_news-6.x-1.0-alpha5.tgz"
+projects[worx_news][directory_name] = "worx_news"
+
+projects[worx_services][download][type] = "get"
+projects[worx_services][destination] = "features"
+projects[worx_services][download][url] = "http://features.worxco.com/sites/default/files/fserver/worx_services-6.x-1.0-alpha2.tgz"
+projects[worx_services][directory_name] = "worx_services"
+
+projects[worx_tesimonials][download][type] = "get"
+projects[worx_tesimonials][destination] = "features"
+projects[worx_tesimonials][download][url] = "http://features.worxco.com/sites/default/files/fserver/worx_testimonials-6.x-1.0-alpha4.tgz"
+projects[worx_tesimonials][directory_name] = "worx_tesimonials"
+
+libraries[filterted_html][download][type] = "git"
+libraries[filterted_html][destination] = "features"
+libraries[filterted_html][download][url] = "git://github.com/Staris/Filtered-HTML.git"
+libraries[filterted_html][directory_name] = "filterted_html"
+
+libraries[menu_block][download][type] = "git"
+libraries[menu_block][destination] = "features"
+libraries[menu_block][download][url] = "git://github.com/Staris/Menu-Block-Setup.git"
+libraries[menu_block][directory_name] = "menu_block"
