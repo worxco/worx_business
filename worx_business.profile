@@ -19,14 +19,13 @@ function worx_business_profile_modules() {
     'ctools', 'page_manager', 'panels', 'context_admin', 'context_admin_vbo', 'views_content',
     // Features tools
     'context', 'strongarm', 'features', 
-		// Standard modules
+    // Standard modules
     'devel', 'drupalforfirebug', 'drupalforfirebug_preprocess', 'htmlpurifier', 'image_resize_filter', 'jquery_update', 'menu_attributes', 'menu_block', 'menu_breadcrumb', 'xmlsitemap', 
-		// Wysiwyg
-		'wysiwyg', 'imce', 'imce_wysiwyg', 
-		// Php format needed so that Footer Mesage block and have php code for the year, site name, and login/logout.
-		'php', 
-    );
-		
+    // Wysiwyg
+    'wysiwyg', 'imce', 'imce_wysiwyg', 
+    // Php format needed so that Footer Mesage block and have php code for the year, site name, and login/logout.
+    'php', 
+  );
 }
 
 /**
@@ -139,49 +138,49 @@ function worx_business_profile_tasks(&$task, $url) {
   $theme_settings = variable_get('theme_settings', array());
   $theme_settings['toggle_node_info_page'] = FALSE;
   variable_set('theme_settings', $theme_settings);
-	
+
   // Configure user settings. Set user creation to administrator only.
   variable_set('user_register', '0');
-	
-	// Configure Automated URL alias.
+
+  // Configure Automated URL alias.
   variable_set('pathauto_node_pattern', '[menupath-raw]');
   variable_set('pathauto_taxonomy_pattern', '[vocab-raw]/[catpath-raw]');
-	
-	//Setup Home link in the Primary menu
-	if (!db_result(db_query("select count(*) as num from {menu_links} where link_path = '<front>' and link_title = 'Home'"))) {
+
+  //Setup Home link in the Primary menu
+  if (!db_result(db_query("select count(*) as num from {menu_links} where link_path = '<front>' and link_title = 'Home'"))) {
     $link = array('menu_name' => 'primary-links', 'link_path' => '<front>', 'link_title' => 'Home', 'weight' => -50);
     menu_link_save($link);
-	}
+  }
 
   // Configure visible blocks.
   // Disable all default blocks for current theme.
   db_query("UPDATE {blocks} SET status = %d, region = '%s' " .
     "WHERE theme = '%s' AND module = '%s' OR module = '%s'",
     0, NULL, 'garland', 'user', 'system');
-  
-	if (!db_result(db_query("select count(*) as num from {blocks} where module = 'block' and delta = 1"))) {
+
+  if (!db_result(db_query("select count(*) as num from {blocks} where module = 'block' and delta = 1"))) {
     db_query("INSERT INTO {blocks} (module, delta, theme, status, weight, " .
       "region, custom, throttle, visibility, pages, title, cache) " .
       "VALUES ('%s', '%s', '%s', %d, %d, '%s', %d, %d, %d, '%s', '%s', %d)",
       'block', '1', 'garland', 1, -11, 'footer', 0, 0, 0, NULL, NULL, -1);
     db_query("INSERT INTO {boxes} VALUES (%d, '%s', '%s', %d)",
       1, '<p>&copy;<?php print date(Y); ?> <strong><?php print variable_get(\'site_name\', \'Drupal\'); ?></strong>. - All Rights Reserved</p><p><?php global $user; if ($user->uid == 0) { ?><a href="/user">Site Admin Login</a><?php } else { ?><a href="/logout">Logout</a><?php } ?> | Developed by <a href="http://www.worxco.com/" target="_blank">the Worx Company</a> | Hosted by <a href="http://www.hostsofamerica.com/" target="_blank">Hosts of America</a></p>', 'Footer Message', 3);
-	}
-	
-	//Remove and add the standard input formats for Filtered HTML
-	db_query("DELETE FROM {filters} WHERE format = 1 AND module = 'filter'");
-	
-	if (!db_result(db_query("select count(*) as num from {filters} where format = 1 and module='image_resize_filter' and delta = 0"))) {
+  }
+
+  //Remove and add the standard input formats for Filtered HTML
+  db_query("DELETE FROM {filters} WHERE format = 1 AND module = 'filter'");
+  
+  if (!db_result(db_query("select count(*) as num from {filters} where format = 1 and module='image_resize_filter' and delta = 0"))) {
     db_query("INSERT INTO {filters} (format, module, delta, weight) " .
       "VALUES ('%d', '%s', '%d', %d)",
       1, 'image_resize_filter', 0, -10);
   }
-	if (!db_result(db_query("select count(*) as num from {filters} where format = 1 and module='htmlpurifier' and delta = 0"))) {
+  if (!db_result(db_query("select count(*) as num from {filters} where format = 1 and module='htmlpurifier' and delta = 0"))) {
     db_query("INSERT INTO {filters} (format, module, delta, weight) " .
       "VALUES ('%d', '%s', '%d', %d)",
       1, 'htmlpurifier', 1, -9);
   }
-	
+
   //Wysiwyg setup to use ckeditor 
   $settings = array (
     'default' => 1,
@@ -257,20 +256,20 @@ function worx_business_profile_tasks(&$task, $url) {
   );
   
   $settings = serialize($settings);
-	if (db_result(db_query("select count(*) as num from {wysiwyg} where format=1"))) {
+  if (db_result(db_query("select count(*) as num from {wysiwyg} where format=1"))) {
     db_query("update {wysiwyg} set editor='ckeditor', settings='%s where format=1", $settings);
   }
   else {
     db_query("insert into {wysiwyg} (format, editor, settings) values(1, 'ckeditor', '%s')", $settings);
   }
-	if (db_result(db_query("select count(*) as num from {wysiwyg} where format=2"))) {
+  if (db_result(db_query("select count(*) as num from {wysiwyg} where format=2"))) {
     db_query("update {wysiwyg} set editor='ckeditor', settings='%s where format=2", $settings);
   }
   else {
     db_query("insert into {wysiwyg} (format, editor, settings) values(2, 'ckeditor', '%s')", $settings);
   }
-	
-	// Update the menu router information.
+
+  // Update the menu router information.
   menu_rebuild();
 }
 
