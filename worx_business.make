@@ -109,3 +109,14 @@ projects[content_access][version] = "1"
 
 projects[css_injector][subdir] = "standard"
 projects[css_injector][version] = "1"
+
+;Libraries
+libraries[htmlpurifier_library][download][type] = "git"
+libraries[htmlpurifier_library][destination] = "modules/standard/htmlpurifier"
+libraries[htmlpurifier_library][download][url] = "git://github.com/FatGuyLaughing/htmlpurifier_library.git"
+libraries[htmlpurifier_library][directory_name] = "library"
+
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][destination] = "libraries"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.4.1/ckeditor_3.4.1.zip"
+libraries[ckeditor][directory_name] = "ckeditor"
