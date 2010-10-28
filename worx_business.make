@@ -110,6 +110,9 @@ projects[content_access][version] = "1"
 projects[css_injector][subdir] = "standard"
 projects[css_injector][version] = "1"
 
+projects[weight][subdir] = "standard"
+projects[weight][version] = "1"
+
 projects[email][subdir] = "secondary"
 projects[email][version] = "1"
 
