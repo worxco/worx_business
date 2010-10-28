@@ -220,3 +220,8 @@ libraries[menu_block][download][type] = "git"
 libraries[menu_block][destination] = "modules/features"
 libraries[menu_block][download][url] = "git://github.com/Staris/Menu-Block-Setup.git"
 libraries[menu_block][directory_name] = "menu_block"
+
+libraries[ca_gallery][download][type] = "git"
+libraries[ca_gallery][destination] = "modules/features"
+libraries[ca_gallery][download][url] = "git://github.com/worxco/ca_gallery.git"
+libraries[ca_gallery][directory_name] = "ca_gallery"
