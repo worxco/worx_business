@@ -86,6 +86,9 @@ projects[menu_block][version] = "2"
 projects[menu_breadcrumb][subdir] = "standard"
 projects[menu_breadcrumb][version] = "1"
 
+projects[nodewords][subdir] = "standard"
+projects[nodewords][version] = "1"
+
 projects[page_title][subdir] = "standard"
 projects[page_title][version] = "2"
 
