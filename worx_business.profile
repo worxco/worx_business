@@ -20,7 +20,7 @@ function worx_business_profile_modules() {
     // Features tools
     'context', 'strongarm', 'features', 
     // Standard modules
-    'devel', 'drupalforfirebug', 'drupalforfirebug_preprocess', 'htmlpurifier', 'image_resize_filter', 'jquery_update', 'menu_attributes', 'menu_block', 'menu_breadcrumb', 'xmlsitemap', 
+    'devel', 'drupalforfirebug', 'drupalforfirebug_preprocess', 'htmlpurifier', 'image_resize_filter', 'jquery_update', 'menu_attributes', 'menu_block', 'menu_breadcrumb', 'page_title', 'xmlsitemap', 
     // Wysiwyg
     'wysiwyg', 'imce', 'imce_wysiwyg', 
     // Php format needed so that Footer Mesage block and have php code for the year, site name, and login/logout.
