@@ -8,23 +8,20 @@ projects[admin][version] = "2"
 projects[advanced_help][subdir] = "contrib"
 projects[advanced_help][version] = "1"
 
-projects[views][subdir] = "contrib"
-projects[views][version] = "2"
-
-projects[views_bulk_operations][subdir] = "contrib"
-projects[views_bulk_operations][version] = "1"
-
-projects[token][subdir] = "contrib"
-projects[token][version] = "1"
-
-projects[pathauto][subdir] = "contrib"
-projects[pathauto][version] = "1"
-
-projects[lightbox2][subdir] = "contrib"
-projects[lightbox2][version] = "1"
-
 projects[cck][subdir] = "contrib"
 projects[cck][version] = "2"
+
+projects[context][subdir] = "contrib"
+projects[context][version] = "3"
+
+projects[context_admin][subdir] = "contrib"
+projects[context_admin][version] = "1"
+
+projects[ctools][subdir] = "contrib"
+projects[ctools][version] = "1"
+
+projects[features][subdir] = "contrib"
+projects[features][version] = "1"
 
 projects[filefield][subdir] = "contrib"
 projects[filefield][version] = "3"
@@ -41,29 +38,46 @@ projects[imageapi][version] = "1"
 projects[imagecache][subdir] = "contrib"
 projects[imagecache][version] = "2"
 
-projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1"
+projects[lightbox2][subdir] = "contrib"
+projects[lightbox2][version] = "1"
+
+projects[pathauto][subdir] = "contrib"
+projects[pathauto][version] = "1"
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3"
 
-projects[context_admin][subdir] = "contrib"
-projects[context_admin][version] = "1"
-
-projects[context][subdir] = "contrib"
-projects[context][version] = "3"
-
 projects[strongarm][subdir] = "contrib"
 projects[strongarm][version] = "2"
 
-projects[features][subdir] = "contrib"
-projects[features][version] = "1"
+projects[token][subdir] = "contrib"
+projects[token][version] = "1"
+
+projects[views][subdir] = "contrib"
+projects[views][version] = "2"
+
+projects[views_bulk_operations][subdir] = "contrib"
+projects[views_bulk_operations][version] = "1"
+
+; Standard projects
+
+projects[content_access][subdir] = "standard"
+projects[content_access][version] = "1"
+
+projects[css_injector][subdir] = "standard"
+projects[css_injector][version] = "1"
 
 projects[devel][subdir] = "standard"
 projects[devel][version] = "1"
 
 projects[drupalforfirebug][subdir] = "standard"
 projects[drupalforfirebug][version] = "1"
+
+projects[email][subdir] = "secondary"
+projects[email][version] = "1"
+
+projects[embed_gmap][subdir] = "secondary"
+projects[embed_gmap][version] = "1"
 
 projects[globalredirect][subdir] = "standard"
 projects[globalredirect][version] = "1"
@@ -73,6 +87,12 @@ projects[htmlpurifier][version] = "2"
 
 projects[image_resize_filter][subdir] = "standard"
 projects[image_resize_filter][version] = "1"
+
+projects[imce][subdir] = "standard"
+projects[imce][version] = "1"
+
+projects[imce_wysiwyg][subdir] = "standard"
+projects[imce_wysiwyg][version] = "1"
 
 projects[jquery_update][subdir] = "standard"
 projects[jquery_update][version] = "1"
@@ -95,6 +115,9 @@ projects[page_title][version] = "2"
 projects[path_redirect][subdir] = "standard"
 projects[path_redirect][version] = "1"
 
+projects[phone][subdir] = "secondary"
+projects[phone][version] = "2"
+
 projects[skinr][subdir] = "standard"
 projects[skinr][version] = "1"
 
@@ -104,29 +127,10 @@ projects[xmlsitemap][version] = "1"
 projects[wysiwyg][subdir] = "standard"
 projects[wysiwyg][version] = "2"
 
-projects[imce][subdir] = "standard"
-projects[imce][version] = "1"
-
-projects[imce_wysiwyg][subdir] = "standard"
-projects[imce_wysiwyg][version] = "1"
-
-projects[content_access][subdir] = "standard"
-projects[content_access][version] = "1"
-
-projects[css_injector][subdir] = "standard"
-projects[css_injector][version] = "1"
-
 projects[weight][subdir] = "standard"
 projects[weight][version] = "1"
 
-projects[email][subdir] = "secondary"
-projects[email][version] = "1"
-
-projects[embed_gmap][subdir] = "secondary"
-projects[embed_gmap][version] = "1"
-
-projects[phone][subdir] = "secondary"
-projects[phone][version] = "2"
+; Secondary Projects
 
 projects[zipcode][subdir] = "secondary"
 projects[zipcode][version] = "2"
@@ -145,6 +149,9 @@ projects[google_analytics][version] = "3"
 
 projects[gtranslate][subdir] = "secondary"
 projects[gtranslate][version] = "1"
+
+projects[masquerade][subdir] = "secondary"
+projects[masquerade][version] = "1"
 
 projects[nodequeue][subdir] = "secondary"
 projects[nodequeue][version] = "2"
