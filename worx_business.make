@@ -132,9 +132,6 @@ projects[weight][version] = "1"
 
 ; Secondary Projects
 
-projects[zipcode][subdir] = "secondary"
-projects[zipcode][version] = "2"
-
 projects[auto_nodetitle][subdir] = "secondary"
 projects[auto_nodetitle][version] = "1"
 
@@ -143,6 +140,12 @@ projects[custom_breadcrumbs][version] = "1"
 
 projects[date][subdir] = "secondary"
 projects[date][version] = "2"
+
+projects[email][subdir] = "secondary"
+projects[email][version] = "1"
+
+projects[embed_gmap][subdir] = "secondary"
+projects[embed_gmap][version] = "1"
 
 projects[google_analytics][subdir] = "secondary"
 projects[google_analytics][version] = "3"
@@ -176,6 +179,9 @@ projects[site_verify][version] = "1"
 
 projects[webform][subdir] = "secondary"
 projects[webform][version] = "3"
+
+projects[zipcode][subdir] = "secondary"
+projects[zipcode][version] = "2"
 
 ;Libraries
 libraries[htmlpurifier_library][download][type] = "git"
