@@ -201,7 +201,7 @@ projects[browny][version] = "1"
 
 projects[corolla][version] = "1"
 
-projects[fusion][subdir] = "core"
+projects[fusion][subdir] = "_core"
 projects[fusion][version] = "1"
 
 projects[magazeen][version] = "3"
@@ -210,7 +210,7 @@ projects[magazeen][version] = "1"
 
 projects[tarski][version] = "1"
 
-projects[zen][subdir] = "core"
+projects[zen][subdir] = "_core"
 projects[zen][version] = "2"
 
 ;Libraries
