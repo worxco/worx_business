@@ -183,6 +183,41 @@ projects[webform][version] = "3"
 projects[zipcode][subdir] = "secondary"
 projects[zipcode][version] = "2"
 
+; Themes
+
+projects[acquia_marina][subdir] = "theme"
+projects[acquia_marina][version] = "3"
+
+projects[acquia_prosper][subdir] = "theme"
+projects[acquia_prosper][version] = "1"
+
+projects[acquia_slate][subdir] = "theme"
+projects[acquia_slate][version] = "2"
+
+projects[admire_grunge][subdir] = "theme"
+projects[admire_grunge][version] = "1"
+
+projects[amlekula][subdir] = "theme"
+projects[amlekula][version] = "3"
+
+projects[black_mamba][subdir] = "theme"
+projects[black_mamba][version] = "1"
+
+projects[browny][subdir] = "theme"
+projects[browny][version] = "1"
+
+projects[corolla][subdir] = "theme"
+projects[corolla][version] = "1"
+
+projects[magazeen][subdir] = "theme"
+projects[magazeen][version] = "3"
+
+projects[magazeen][subdir] = "theme"
+projects[magazeen][version] = "1"
+
+projects[tarski][subdir] = "theme"
+projects[tarski][version] = "1"
+
 ;Libraries
 libraries[htmlpurifier_library][download][type] = "git"
 libraries[htmlpurifier_library][destination] = "modules/standard/htmlpurifier"
